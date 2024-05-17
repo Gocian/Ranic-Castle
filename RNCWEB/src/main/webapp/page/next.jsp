@@ -90,7 +90,7 @@ try{
 </header>
 
 <nav>
-    <a href="#home">Home</a>
+    <a href="./index.html">Home</a>
     <a href="#about">About</a>
     <a href="#services">Services</a>
     <a href="#contact">Contact</a>
@@ -111,9 +111,9 @@ try{
             <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
             
  <%if(connect==true){%>
-	DB 연결됨
+	DB Connected
 <%}else{ %>
-    DB 연결실패
+    DB Failed
  <%} %>
  
         </div>
