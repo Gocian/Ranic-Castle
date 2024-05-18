@@ -26,9 +26,9 @@ try{
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Creative Studio landing page.">
-    <meta name="author" content="Devcrud">
-    <title>TEAM RNC | Drowning FMC</title>
+    <meta name="description" content="Start your development with Team RNC.">
+    <meta name="author" content="Gocian">
+    <title>TEAM RNC | FMC</title>
 
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
@@ -43,7 +43,7 @@ try{
     <nav class="navbar custom-navbar navbar-expand-lg navbar-dark" data-spy="affix" data-offset-top="20">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="assets/imgs/logo.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">
+                <img src="assets/imgs/logo.png" >
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span></span>
@@ -87,7 +87,7 @@ try{
     <!-- Page Header -->
     <header class="header">
         <div class="overlay">
-            <h6 class="subtitle">Small Team With Big Ideas</h6>
+            <h6 class="subtitle">We Redefine The Masterpiece</h6>
             <h1 class="title">TEAM RNC</h1>
             <div class="buttons text-center">
                 <a href="#service" class="btn btn-primary rounded w-lg btn-lg my-1">Our Service</a>
@@ -102,17 +102,17 @@ try{
         <div class="box-item">
             <i class="ti-vector"></i>
             <h6 class="box-title">Design</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis excepturi, repellat esse laborum explicabo quia.</p>
+            <p>Design your custom website with Castle-Hun the project manager.</p>
         </div>
         <div class="box-item">
             <i class="ti-filter"></i>
             <h6 class="box-title">Development</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis excepturi, repellat esse laborum explicabo quia.</p>
+            <p>Our team has the best developers. Any feature you want will be realized.</p>
         </div>
         <div class="box-item">
             <i class="ti-mobile"></i>
-            <h6 class="box-title">App</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis excepturi, repellat esse laborum explicabo quia.</p>
+            <h6 class="box-title">Business</h6>
+            <p>No money? Contact director Namjung. You will definitely be satisfied.</p>
         </div>
     </div>
     <!-- End of Box -->
@@ -122,14 +122,16 @@ try{
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-5 col-lg-4">
-                    <img src="assets/imgs/about.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page" class="w-100 img-thumbnail mb-3">
+                    <img src="assets/imgs/1-15.png" >
                 </div>
                 <div class="col-md-7 col-lg-8">
-                    <h6 class="section-subtitle mb-0">We Create</h6>
-                    <h6 class="section-title mb-3">Awesome Work</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente cupiditate quas, amet harum perferendis minus, cum dolorum obcaecati iste aspernatur voluptatum aut.</p>
-                    <p>Cum laudantium unde nemo doloribus eligendi quodarum ea vitae dicta. Accusantium vero, ea? Alias, atque libero. Id, ut harum. </p>
-                    <p>consectetur adipisicing elit. Omnis quidem, quos iure a dolorum illum culpa quia nemo soluta, ratione harum beatae minus doloribus consectetur! Similique tempora sunt doloribus molestias.</p>
+                    <h6 class="section-subtitle mb-0">We Create Only</h6>
+                    <h6 class="section-title mb-3">Masterpieces</h6>
+                    <p>We specialize in developing websites that perfectly match our clients' needs, delivering exceptional results with top-notch expertise.</p>
+                    <p>We have participated in government-funded projects and have even won awards for our work. As time goes by, we continue to grow and improve, aiming to expand beyond a team into a fully-fledged corporation. </p>
+                    <p>Our developers are among the best in the industry, ensuring that any feature you desire can be implemented seamlessly.</p>
+                    <p>We take pride in our ability to combine technical excellence with customer satisfaction.</p>
+                    <p>Trust us to bring your vision to life with unparalleled professionalism and skill.</p>
                 </div>
             </div>
         </div>
@@ -139,8 +141,8 @@ try{
     <!-- About Section with bg -->
     <section class="has-bg-img py-md">
         <div class="container text-center">
-            <h6 class="section-subtitle">We See</h6>
-            <h6 class="section-title mb-6">What Other Don't See.</h6>
+            <h6 class="section-subtitle">We Find</h6>
+            <h6 class="section-title mb-6">What You Want.</h6>
             <div class="widget mb-4">
                 <div class="widget-item">
                     <i class="ti-notepad"></i>
@@ -163,7 +165,7 @@ try{
     </section>
     <!-- End Of About Sectoin -->
 
-    <!-- Service Section -->
+    <!-- Service Section 
     <section id="service">
         <div class="container">
             <h6 class="section-subtitle text-center">Makes Happen</h6>
@@ -245,9 +247,9 @@ try{
             </div>  
         </div>
     </section>
-    <!-- End of Service Section -->
+     End of Service Section -->
 
-    <!-- Portfolio section -->
+    <!-- Portfolio section 
     <section id="portfolio">
         <div class="container text-center">
             <h6 class="section-subtitle">Our Awesome Works</h6>
@@ -322,7 +324,7 @@ try{
             </div>
         </div>
     </section>
-    <!-- End of portfolio section -->
+     End of portfolio section -->
 
     <!-- Team Section -->
     <section id="team">
@@ -348,7 +350,7 @@ try{
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="card text-center mb-4">
-                        <img class="card-img-top inset" src="assets/imgs/avatar-1.jpg">
+                        <img class="card-img-top inset" src="assets/imgs/avatar_logo.png">
                         <div class="card-body">
                             <h6 class="small text-primary font-weight-bold">Director</h6>
                             <h5 class="card-title">Nam Jung</h5>
@@ -364,7 +366,7 @@ try{
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="card text-center mb-4">
-                        <img class="card-img-top inset" src="assets/imgs/avatar-2.jpg">
+                        <img class="card-img-top inset" src="assets/imgs/avatar_logo.png">
                         <div class="card-body">
                             <h6 class="small text-primary font-weight-bold">General</h6>
                             <h5 class="card-title">Charl</h5>
@@ -380,7 +382,7 @@ try{
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="card text-center mb-4">
-                        <img class="card-img-top inset" src="assets/imgs/avatar-3.jpg">
+                        <img class="card-img-top inset" src="assets/imgs/avatar_logo.png">
                         <div class="card-body">
                             <h6 class="small text-primary font-weight-bold">Intern</h6>
                             <h5 class="card-title">Cian Go</h5>
@@ -396,7 +398,7 @@ try{
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="card text-center mb-4">
-                        <img class="card-img-top inset" src="assets/imgs/avatar-4.jpg">
+                        <img class="card-img-top inset" src="assets/imgs/avatar_logo.png">
                         <div class="card-body">
                             <h6 class="small text-primary font-weight-bold">Designer</h6>
                             <h5 class="card-title">John</h5>
@@ -412,7 +414,7 @@ try{
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="card text-center mb-4">
-                        <img class="card-img-top inset" src="assets/imgs/avatar-5.jpg">
+                        <img class="card-img-top inset" src="assets/imgs/avatar_logo.png">
                         <div class="card-body">
                             <h6 class="small text-primary font-weight-bold">Broker</h6>
                             <h5 class="card-title">Amy</h5>
@@ -471,10 +473,10 @@ try{
                 <div class="col-md-6">
                     <div class="testimonial-wrapper">
                         <div class="img-holder">
-                            <img src="assets/imgs/avatar-5.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">                     
+                            <img src="assets/imgs/avatar_logo.png" >                     
                         </div>
                         <div class="body">
-                            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
+                            <p class="subtitle">'íþ'</p>
                             <h6 class="title">Cheolsu Kim</h6>
                         </div>
                     </div>
@@ -482,10 +484,10 @@ try{
                 <div class="col-md-6">
                     <div class="testimonial-wrapper">
                         <div class="img-holder">
-                            <img src="assets/imgs/avatar-6.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">                     
+                            <img src="assets/imgs/avatar_logo.png" >                     
                         </div>
                         <div class="body">
-                            <p class="subtitle">¹ä°ªÇÕ½Ã´Ù.</p>
+                            <p class="subtitle">Earn Your Keep.</p>
                             <h6 class="title">Cheonjung Kim</h6>
                         </div>
                     </div>
@@ -534,8 +536,8 @@ try{
                                 <a href="javascript:void(0)"><i class="ti-comments"></i> 123</a>
                                 <a href="javascript:void(0)"><i class="ti-eye"></i> 123</a>
                             </div>
-                            <h5 class="card-title">¼Ò°í±â</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae laudantium dolor nisi obcaecati, non laboriosam asperiores doloremque tempora repellendus iure!</p>
+                            <h5 class="card-title">Beef</h5>
+                            <p>The beef is absolutely exquisite. Each bite melts in your mouth with rich, savory flavors that are perfectly balanced. This is truly a gourmet experience that showcases the finest quality of beef.</p>
                             <a href="javascript:void(0)" class="d-block mt-3">Read More...</a>
                         </div>
                     </div>
@@ -548,8 +550,8 @@ try{
                                 <a href="javascript:void(0)"><i class="ti-comments"></i> 434</a>
                                 <a href="javascript:void(0)"><i class="ti-eye"></i> 987</a>
                             </div>
-                            <h5 class="card-title">µÅÁö°í±â</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae laudantium dolor nisi obcaecati, non laboriosam asperiores doloremque tempora repellendus iure!</p>
+                            <h5 class="card-title">Pork</h5>
+                            <p>The pork is simply outstanding. Its succulent texture and depth of flavor are unparalleled, making each bite a delight. This dish exemplifies the pinnacle of culinary craftsmanship with pork.</p>
                             <a href="javascript:void(0)" class="d-block mt-3">Read More...</a>
                         </div>
                     </div>
@@ -562,8 +564,8 @@ try{
                                 <a href="javascript:void(0)"><i class="ti-comments"></i> 164</a>
                                 <a href="javascript:void(0)"><i class="ti-eye"></i> 425</a>
                             </div>
-                            <h5 class="card-title">¼ÒÁÖ</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae laudantium dolor nisi obcaecati, non laboriosam asperiores doloremque tempora repellendus iure!</p>
+                            <h5 class="card-title">Job</h5>
+                            <p>Working in FMC is so exhausting. The constant pressure and endless deadlines make it hard to enjoy the job. Some days, it feels like the stress never ends.</p>
                             <a href="javascript:void(0)" class="d-block mt-3">Read More...</a>
                         </div>
                     </div>
