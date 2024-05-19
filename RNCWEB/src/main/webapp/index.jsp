@@ -36,6 +36,46 @@ try{
     <!-- Bootstrap + Creative Studio main styles -->
 	<link rel="stylesheet" href="assets/css/creative-studio.css">
 
+    <style>
+        .blog-section {
+            /* Add your existing styles for the blog section */
+        }
+        .like-button {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .like-button:hover {
+            background-color: #0056b3;
+        }
+        .like-count {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+    
+    <script>
+        function incrementLike() {
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "./like.jsp", true);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                	const responseText = xhr.responseText.trim(); // 응답에서 공백 제거
+                    document.getElementById('likeCount').innerText = responseText;
+                }
+            };
+            xhr.send();
+        }
+    </script>
+
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     
@@ -116,6 +156,38 @@ try{
         </div>
     </div>
     <!-- End of Box -->
+    
+    <!-- Button -->
+    <div class="buttons text-center">
+    	<button class="btn2 btn-primary rounded w-lg btn-lg my-1" onclick="incrementLike()">Like</button>
+    	<div class="like-count" id="likeCount">
+    		<%
+            Statement stmt = null;
+            ResultSet rs = null;
+            int likeCount = 0;
+
+            try {
+                stmt = conn.createStatement();
+                rs = stmt.executeQuery("SELECT CNT FROM CNT WHERE SEQ = 1");
+
+                if (rs.next()) {
+                    likeCount = rs.getInt("CNT");
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            } finally {
+                try { if (rs != null) rs.close(); } catch (SQLException e) { e.printStackTrace(); }
+                try { if (stmt != null) stmt.close(); } catch (SQLException e) { e.printStackTrace(); }
+                try { if (conn != null) conn.close(); } catch (SQLException e) { e.printStackTrace(); }
+            }
+
+            out.print(likeCount);
+            %>
+    	</div>
+    </div>
+    <!-- End of Button -->
+    
+    
 
     <!-- About Section -->
     <section id="about">
@@ -334,7 +406,7 @@ try{
             <div class="row">
                 <div class="col-sm-6 col-md-4">
                     <div class="card text-center mb-4">
-                        <img class="card-img-top inset" src="assets/imgs/avatar.jpg">
+                        <img class="card-img-top inset" src="assets/imgs/avatar_logo.png">
                         <div class="card-body">
                             <h6 class="small text-primary font-weight-bold">Project Manager</h6>
                             <h5 class="card-title">Castle Hun</h5>
@@ -414,7 +486,7 @@ try{
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="card text-center mb-4">
-                        <img class="card-img-top inset" src="assets/imgs/avatar_logo.png">
+                        <img class="card-img-top inset" src="assets/imgs/TEAMRNC.png">
                         <div class="card-body">
                             <h6 class="small text-primary font-weight-bold">Broker</h6>
                             <h5 class="card-title">Amy</h5>
