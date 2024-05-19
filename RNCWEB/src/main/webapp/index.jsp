@@ -59,6 +59,40 @@ try{
             font-size: 18px;
             color: #333;
         }
+        
+                /* Modal styles */
+        .modal2 {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        .modal-content2 {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+        .close2 {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close2:hover,
+        .close2:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
     </style>
     
     <script>
@@ -69,10 +103,27 @@ try{
             xhr.onreadystatechange = function() {
                 if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
                 	const responseText = xhr.responseText.trim(); // 응답에서 공백 제거
-                    document.getElementById('likeCount').innerText = responseText;
+                	const likeCount = parseInt(responseText, 10); // 응답을 정수로 변환
+                    document.getElementById('likeCount').innerText = likeCount;
+                	
+                    if (likeCount % 10 === 0) {
+                    	showModal('Congratulations! Likes reached ' + likeCount + '!');
+                    }
                 }
             };
             xhr.send();
+        }
+        
+        function showModal(message) {
+            const modal = document.getElementById("myModal");
+            const modalMessage = document.getElementById("modalMessage");
+            modalMessage.innerText = message;
+            modal.style.display = "block";
+        }
+
+        function closeModal() {
+            const modal = document.getElementById("myModal");
+            modal.style.display = "none";
         }
     </script>
 
@@ -136,6 +187,8 @@ try{
         </div>      
     </header>
     <!-- End Of Page Header -->
+    
+    
 
     <!-- Box -->
     <div class="box text-center">
@@ -156,36 +209,6 @@ try{
         </div>
     </div>
     <!-- End of Box -->
-    
-    <!-- Button -->
-    <div class="buttons text-center">
-    	<button class="btn2 btn-primary rounded w-lg btn-lg my-1" onclick="incrementLike()">Like</button>
-    	<div class="like-count" id="likeCount">
-    		<%
-            Statement stmt = null;
-            ResultSet rs = null;
-            int likeCount = 0;
-
-            try {
-                stmt = conn.createStatement();
-                rs = stmt.executeQuery("SELECT CNT FROM CNT WHERE SEQ = 1");
-
-                if (rs.next()) {
-                    likeCount = rs.getInt("CNT");
-                }
-            } catch (Exception e) {
-                e.printStackTrace();
-            } finally {
-                try { if (rs != null) rs.close(); } catch (SQLException e) { e.printStackTrace(); }
-                try { if (stmt != null) stmt.close(); } catch (SQLException e) { e.printStackTrace(); }
-                try { if (conn != null) conn.close(); } catch (SQLException e) { e.printStackTrace(); }
-            }
-
-            out.print(likeCount);
-            %>
-    	</div>
-    </div>
-    <!-- End of Button -->
     
     
 
@@ -535,6 +558,50 @@ try{
                 </div>
         </div>
     </section>
+    
+    
+    <section>
+    <!-- Button -->
+    <div class="buttons text-center">
+    	<button class="btn2 btn-primary rounded w-lg btn-lg my-1" onclick="incrementLike()">Like</button>
+    	<div class="like-count" id="likeCount">
+    		<%
+            Statement stmt = null;
+            ResultSet rs = null;
+            int likeCount = 0;
+
+            try {
+                stmt = conn.createStatement();
+                rs = stmt.executeQuery("SELECT CNT FROM CNT WHERE SEQ = 1");
+
+                if (rs.next()) {
+                    likeCount = rs.getInt("CNT");
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            } finally {
+                try { if (rs != null) rs.close(); } catch (SQLException e) { e.printStackTrace(); }
+                try { if (stmt != null) stmt.close(); } catch (SQLException e) { e.printStackTrace(); }
+                try { if (conn != null) conn.close(); } catch (SQLException e) { e.printStackTrace(); }
+            }
+
+            out.print(likeCount);
+            %>
+    	</div>
+    	
+    	
+    </div>
+    <!-- End of Button -->
+    
+    <!-- The Modal -->
+  	  <div id="myModal" class="modal2">
+    	  <div class="modal-content2">
+    	    <span class="close2" onclick="closeModal()">&times;</span>
+    	    <p id="modalMessage"></p>
+   	   </div>
+  	  </div>
+	</section>
+
 
     <!-- Testimonial Section -->
     <section id="testimonial">
